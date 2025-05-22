@@ -29,7 +29,12 @@ return [
     */
 
     'disks' => [
-
+        'google' => [
+            'driver' => 'google',
+            'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
+            'teamDriveId' => null, // optional
+            'service_account_credentials_json' => storage_path('app/google-drive.json'),
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
