@@ -167,7 +167,8 @@ return [
         'notifiable' => \Spatie\Backup\Notifications\Notifiable::class,
 
         'mail' => [
-            'to' => 'qatesting119@gmail.com',
+            'to' => 'testing.softenica.technologies@gmail.com',
+            // 'to' => 'qatesting119@gmail.com',
 
             'from' => [
                 'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
@@ -275,6 +276,8 @@ return [
              * this amount of megabytes has been reached.
              */
             'delete_oldest_backups_when_using_more_megabytes_than' => 5000,
+
+            'keep_backups_count' => 10,
         ],
     ],
 

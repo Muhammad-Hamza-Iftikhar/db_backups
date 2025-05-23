@@ -11,7 +11,7 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
-        "masbug/flysystem-google-drive-ext": "*",
+        "masbug/flysystem-google-drive-ext": "^2.4",
         "spatie/laravel-backup": "^8.2"
     },
     "require-dev": {

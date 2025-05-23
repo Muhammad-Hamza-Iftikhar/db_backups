@@ -29,11 +29,18 @@ return [
     */
 
     'disks' => [
+        // 'google' => [
+        //     'driver' => 'google',
+        //     'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
+        //     'teamDriveId' => null, // optional
+        //     'service_account_credentials_json' => storage_path('app/google-drive.json'),
+        // ],
         'google' => [
             'driver' => 'google',
-            'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'),
-            'teamDriveId' => null, // optional
-            'service_account_credentials_json' => storage_path('app/google-drive.json'),
+            'clientId' => env('GOOGLE_DRIVE_CLIENT_ID'),
+            'clientSecret' => env('GOOGLE_DRIVE_CLIENT_SECRET'),
+            'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
+            'folderId' => env('GOOGLE_DRIVE_FOLDER_ID'), // leave null to use root
         ],
         'local' => [
             'driver' => 'local',
